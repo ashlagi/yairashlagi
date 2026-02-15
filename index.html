@@ -1,123 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Yair Ashlagi — PhD Student in ML Theory</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-      color: #222;
-    }
-    header {
-      background: #f8f9fa;
-      padding: 15px 20px;
-      border-bottom: 1px solid #ddd;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    header nav a {
-      margin-right: 20px;
-      color: #0645ad;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    header nav a:hover {
-      text-decoration: underline;
-    }
-    h1, h2 {
-      color: #003366;
-    }
-    .profile {
-      display: flex;
-      align-items: center;
-      margin-top: 20px;
-    }
-    .profile img {
-      width: 160px;
-      border-radius: 8px;
-      margin-right: 25px;
-    }
-    .section {
-      margin-top: 45px;
-    }
-    .pub {
-      margin-bottom: 20px;
-    }
-  </style>
+  <title>Yair Ashlagi | Machine Learning Theory</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+<nav>
+  <a href="#about">About</a>
+  <a href="#publications">Publications</a>
+  <a href="#teaching">Teaching</a>
+</nav>
+
 <header>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#publications">Publications</a>
-    <a href="#teaching">Teaching</a>
-  </nav>
+  <h1>Yair Ashlagi</h1>
+  <div class="subtitle">
+    PhD Student · Machine Learning Theory · Tel Aviv University
+  </div>
 </header>
 
-<h1>Yair Ashlagi</h1>
-
-<div class="profile">
+<section class="profile">
   <img src="your_photo.jpg" alt="Yair Ashlagi">
   <div>
-    <p>PhD Student, Electrical Engineering<br>
-      Tel Aviv University</p>
-    <p>Email: <a href="mailto:your.email@tau.ac.il">your.email@tau.ac.il</a></p>
     <p>
-      <a href="https://scholar.google.com">Google Scholar</a> •
-      <a href="cv.pdf">PDF CV</a>
+      I am a PhD student in the Electrical Engineering Department at 
+      Tel Aviv University, working on machine learning theory and generalization.
+    </p>
+
+    <p>
+      Advised by Roi Livni (TAU) and Shay Moran (Technion).
+    </p>
+
+    <p class="links">
+      <a href="mailto:your.email@tau.ac.il">Email</a>
+      <a href="#">Google Scholar</a>
+      <a href="#">GitHub</a>
+      <a href="cv.pdf">CV</a>
     </p>
   </div>
-</div>
+</section>
 
-<div id="about" class="section">
-  <h2>About Me</h2>
+<section id="about">
+  <h2>Research</h2>
   <p>
-    I am a PhD student in the Electrical Engineering Department at Tel Aviv University,
-    working in machine learning theory and generalization. My current research focuses
-    on theoretical guarantees for learning algorithms and structural insights into
-    generalization phenomena.
+    My research focuses on theoretical aspects of learning and generalization,
+    including structural properties of learning algorithms and complexity-driven bounds.
   </p>
-  <p>
-    I am co-advised by Roi Livni (TAU) and Shay Moran (Technion). My interests
-    span learning theory, generalization bounds, and algorithmic structure in high-dimensional
-    models.
-  </p>
-</div>
+</section>
 
-<div id="publications" class="section">
-  <h2>Selected Publications</h2>
+<section id="publications">
+  <h2>Publications</h2>
 
-  <div class="pub">
-    <strong>Functions with average smoothness: structure, algorithms, and learning</strong><br>
-    Y. Ashlagi, Lee-Ad Gottlieb & Aryeh Kontorovich.<br>
-    <em>Proceedings of the 34th Conference on Learning Theory (COLT)</em>, 2021; later published
-    in <em>Journal of Machine Learning Research</em>. :contentReference[oaicite:0]{index=0}<br>
-    [<a href="https://proceedings.mlr.press/v134/ashlagi21a.html">COLT Paper</a>] ·
-    [<a href="https://jmlr.org/papers/v25/23-0182.html">JMLR Version</a>]
+  <div class="publication">
+    <div class="publication-title">
+      Functions with Average Smoothness: Structure, Algorithms, and Learning
+    </div>
+    Yair Ashlagi, Lee-Ad Gottlieb, Aryeh Kontorovich<br>
+    COLT 2021 · JMLR 2024
   </div>
 
-  <div class="pub">
-    <strong>An efficient shift rule for the prefer-max De Bruijn sequence</strong><br>
-    G. Amram, Y. Ashlagi, A. Rubin, Y. Svoray, M. Schwartz & G. Weiss.<br>
-    <em>Discrete Mathematics</em>, 342(1):226-232, 2019. :contentReference[oaicite:1]{index=1}<br>
-    [<a href="https://doi.org/10.1016/j.disc.2018.09.024">PDF</a>]
-  </div>
+</section>
 
-  <!-- Add more publications here -->
-</div>
-
-<div id="teaching" class="section">
+<section id="teaching">
   <h2>Teaching</h2>
   <p>
-    **Grader**, Computational Learning Theory, Fall 2025<br>
-    Department of Electrical Engineering, Tel Aviv University.
+    Grader, Computational Learning Theory, Fall 2025
   </p>
-</div>
+</section>
+
+<footer>
+  Last updated: February 2026
+</footer>
 
 </body>
 </html>
